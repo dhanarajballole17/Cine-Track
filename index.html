@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Data-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Title-->
+    <title>Cine-Track</title>
+
+    <!--CSS and JavaScript-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/d5635d350d.js" crossorigin="anonymous"></script>
+</head>
+<body onload="initializePage(); fetchTrendingMovies();">
+    <!-- Loader -->
+    <div id="loader" class="loader" aria-hidden="true"></div>
+
+    <!-- Header Bar -->
+    <header class="header">
+        <div class="header-container">
+            <div>
+                <h1>Search for movies</h1>
+            </div>
+            <nav class="header-link">
+                <a href="favorite.html">Watchlist</a>
+            </nav>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Type movie name here..." class="search-bar" id="Input" aria-label="Movie search input">
+            <button type="submit" onclick="searchMovies()" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main">
+        <!-- Trending Movies Display Section -->
+        <section class="trending-container" id="trending-container" aria-label="Trending Movies">
+            <!-- Trending movies will be displayed here -->
+        </section>
+        <!-- Search Items Display Section -->
+        <section class="fav-container" id="fav-container" aria-label="Search Results">
+            <!-- Items are displayed here -->
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
